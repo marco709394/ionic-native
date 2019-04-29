@@ -72,7 +72,7 @@ export class BluetoothSerial extends IonicNativePlugin {
    * @returns {Promise<any>}
    */
   @Cordova()
-  disconnect(): Promise<any> {
+  disconnect(macAddress?: string): Promise<any> {
     return;
   }
 
@@ -84,7 +84,7 @@ export class BluetoothSerial extends IonicNativePlugin {
   @Cordova({
     platforms: ['Android', 'iOS', 'Windows Phone']
   })
-  write(data: any): Promise<any> {
+  write(data: any, macAddress?: string): Promise<any> {
     return;
   }
 
